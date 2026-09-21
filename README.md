@@ -1,2 +1,2 @@
-# HTML-CSS-jQuery-G-ncel-Oyun-Haber
+# HTML-CSS-jQuery-Güncel-Oyun-Haber
 HTML5, CSS, jQuery kullanımıştır
