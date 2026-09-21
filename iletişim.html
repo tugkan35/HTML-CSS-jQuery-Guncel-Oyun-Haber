@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GÜNCEL OYUN HABER</title>
+<meta name="description" content="Güncel Oyun Haber Son Başlık">
+<meta name="keywords" content="Güncel, Oyun Haberlari, Güncel Oyun Haberleri, Steam Son Gelişme">
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<link rel="shortcut icon" href="İMG/logo.jpg">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="CSS/Nivo CSS/nivo-slider.css">
+<link rel="stylesheet" type="text/css" href="themes/bar/bar.css">
+<link rel="stylesheet" type="text/css" href="themes/dark/dark.css">
+<link rel="stylesheet" type="text/css" href="themes/default/default.css">
+<link rel="stylesheet" type="text/css" href="themes/light/light.css">
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+<script src="JS/jquery-1.9.0.min.js"></script>
+<script src="JS/jquery.nivo.slider.js"></script>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(window).load(function() {
+	      $('#slider').nivoSlider();
+      });
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<header>
+      <div id="logo">
+         <h2>GÜNCEL OYUN HABER</h2>
+      </div><!--logo bitişi-->
+     <nav>
+       <ul>
+          <li>
+             <h3><a href="index.html">ANA SAYFA</a></h3>
+             <h4>Geri Dönün</h4>
+          </li>
+          
+          <li>
+             <h3><a href="galeri.html">GALERİ</a></h3>
+             <h4>Ziyaret Edin</h4>
+          </li>
+		  
+		  <li>
+             <h3><a href="hakkında.html">HAKKINDA</a></h3>
+             <h4>Okuyun</h4>
+          </li>
+          
+          <li>
+             <h3><a href="iletişim.html">İLETİŞİM</a></h3>
+             <h4>İletişime Geçin</h4>
+          </li>
+       </ul>     
+    </nav>
+</header>
+
+<div id="google-map">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200065.3962880729!2d26.939630679303317!3d38.417860687431926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd862a762cacd%3A0x628cbba1a59ce8fe!2zxLB6bWly!5e0!3m2!1str!2str!4v1546700286045" width="460" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="container">
+
+   <div id="iletisim">  
+      <form>
+      <table border="0" cellspacing="5" cellpadding="5">
+  <caption>
+    İletişim
+  </caption>
+  <tr>
+    <th scope="row">İSİM</th>
+    <td><input name="name" type="text"></td>
+  </tr>
+  <tr>
+    <th scope="row">E-POSTA</th>
+    <td><span id="sprytextfield1">
+      <label for="e-mail"></label>
+      <input type="text" name="e-mail" id="e-mail">
+      <span class="textfieldRequiredMsg">Geçersiz</span></span></td>
+  </tr>
+  <tr>
+    <th scope="row">KONU</th>
+    <td><input name="subject" type="text"></td>
+  </tr>
+  <tr>
+    <th scope="row">MESAJ</th>
+    <td><textarea style="resize:none;" rows="3" maxlength="255"></textarea></td>
+  </tr>
+  <tr>
+    <th scope="row">&nbsp;</th>
+    <td><input name="submit" type="submit" value="GÖNDER"></td>
+  </tr>
+</table>   
+      </form> 
+   </div><!--contact bitişi-->
+   
+
+</div><!--container bitişi-->
+
+
+ 
+<div class="clr"></div>     
+<footer>
+   <div id="social-media">
+       <ul class="cl-effect-1">
+          <li><a href="#"><img src="İMG/facebook.png" width="30" height="30"></a></li>
+          <li><a href="#"><img src="İMG/instagram.png" width="30" height="30"></a></li>
+          <li><a href="#"><img src="İMG/youtube.png" width="30" height="30"></a></li>
+          <li><a href="#"><img src="İMG/twitter.png" width="30" height="30"></a></li>      
+       </ul> 
+   </div>
+   <br>
+   <div id="copyright">Güncel Oyun Haber Copyright &copy; 2018 | Tüm hakları Saklıdır.</div>
+
+</footer>
+</div><!--wrapper bitiş-->
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+</script>
+</body>
+</html>
