@@ -1,0 +1,335 @@
+/* CSS Document */
+*{
+  margin:0;
+  padding:0;
+   /*(*) yıldız komutu bu web sayfası dökümanındaki tüm etiketleri kapsar. Yıldız içine yazılan sıfırlama kodları,
+  ikinci bir komut verilene kadar geçerli olur. Bu işleme CSS Reset adıda verilebilir.*/
+  list-style-type:none;
+  /*ul li içinde standart gelen daireleri kapatıyoruz.*/
+    text-decoration:none;
+	/*a etiketi ile tıklama verdiğimiz tüm objelere standart olarak
+	altı çizgili geliyor. Bu özelliği sıfırlamak için bu komutu kullanıyoruz.*/
+}
+	
+body {
+	background-image:url(../%C4%B0MG/carbon_fibre_big.png);
+}
+	 
+header {
+	width:960px;
+	height:100px;
+	background-color:#666;
+	border-bottom:#F00 2px solid;
+}
+		
+header #logo h2 {
+	background-color:#ed1d24;
+	color:#FFF;
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+	width:420px;
+	height:60px;
+	text-align:center;
+	line-height:25px;
+	padding-top:35px;
+/*padding iç boşluk demektir.Üst kısımdan 35px kadar iç boşluk verdik.
+Böylelikle başlığımızı biraz aşağıya taşıdık.*/
+}
+
+header #logo h2 {
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+	font-size:32px;
+	font-style:normal;	
+}
+		
+#logo h2{
+	color:#333;
+	/*etiketler arası virgül koyarsam, hem ona hem diğerine aynı özelliği tanımlar.*/
+}
+	 
+header #logo {
+	width:245px;
+	height:100px;
+	float:left;
+	padding-left:15px;
+	/*Padding değeri iç boşluktur. İçeriden ittirir ve esnetir dolaysıyla left-right
+	değeri verdiyseniz, yukarudaki gibi genişlikten düşmelisiniz.260px-15px=245px */
+}
+	 
+header nav{
+	width:700px;
+	height:100px;
+	float:left;
+}
+	 
+header nav ul li {
+	 float:left;
+	 margin-top:26px;
+	 margin-left:30px;
+}
+
+header nav ul {
+	margin-right:100px;
+	float:right;
+}
+
+/*ul komutu komple listedir, tüm listeyi sağ veya sola kaydırmak için margin-left veya right komutu yazılır.*/
+header nav ul li h3 a {
+	 font-family: 'Roboto', sans-serif;
+     font-family: 'Roboto Condensed', sans-serif;
+	 font-weight:bold;
+	 color:#FFF;
+	 font-size:18px;
+}
+
+header nav ul li h3 a:hover {
+	color:#F00;
+	transition:0.5s ease-in-out;
+}
+	 
+header nav ul li h4 {
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+	font-weight:lighter;
+	color:#FFF;
+	font-size:14px;
+	font-style:normal;
+}
+
+.wrapper {
+	 width:960px;
+	 height:auto; /*yükseklik otomatik derseniz, site içeriği kadar yükselecektir.*/
+	 margin:0 auto;
+    /*margin değerinin yukarıdaki gibi sadeleşmiş şekilde tek satırda
+	 yazabilirsiniz. TOP-RIGHT-BOTTOM-LEFT sırasıyla yazıldığını
+	 unutmayın. Eğer margin:0 auto; yazarsanız bunun açılımı : üst-alt 0
+	 değer, sağ-sol oto değer anlamına gelir.*/
+}
+	 
+#slider {
+	width:960px;
+	height:400px;
+	margin-top:20px;
+}
+
+.wrapper .content-box {
+	 width:300px;
+	 height:300px;
+	 float:left;
+	 background-color:#F00;
+	 transition: transform .2s; /* Animation */
+	 margin-top:20px;
+}
+
+.bosluk {
+	margin-left:30px;
+	margin-right:30px;
+}
+
+.content-box:hover {
+  transform: scale(1.2);
+  cursor:zoom-in;
+  box-shadow:#F00 2px 2px 5px 10px;
+}
+
+footer  {
+	width:960px;
+	height:150px;
+	background-color:#666;
+	margin-top:20px;
+	border-top:#F00 2px solid;
+}
+
+footer #social-media {
+    width:600px;
+    height:30px;
+	padding-top:45px;
+	padding-right:22px;
+	padding-left:45px;
+}
+
+footer #social-media ul li a{
+	float:right;
+	color:#F00;
+	font-size:42px;	
+}
+
+.clr{
+	clear:both;
+}
+
+#copyright {
+	padding-top:20px;
+    padding-left:270px;
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+	font-size:18px;
+	font-weight:lighter;
+	font-style:normal;
+	color:#FFF;
+	float:inherit;
+}
+
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+	margin-right: 5px;
+	content: '*';
+	-webkit-transform: translateX(18px);
+	-moz-transform: translateX(18px);
+	transform: translateX(18px);
+}
+
+.cl-effect-1 a::after {
+	margin-left: 5px;
+	content: '*';
+	-webkit-transform: translateX(-18px);
+	-moz-transform: translateX(-18px);
+	transform: translateX(-18px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+/*HAKKINDA */
+
+.border1{
+	width:10px;
+	height:100px;
+	float:right;
+	background-color:#F00;
+	margin-right:14px;
+}
+	
+.container2{
+    width:960px;
+	height:200px;
+	background-color:#666;
+	float:right;
+	margin-bottom:100px;
+}
+	
+.border2{
+	width:10px;
+	height:100px;
+	background-color:#F00;
+	margin-left:14px;
+}
+	
+.container2 #lg {
+	width:100px;
+	height:30px;
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+	color:#FFF;
+	border-bottom:#F00 2px solid;
+	margin-top:5px;
+	margin-left:430px;
+	text-align:center;
+	line-height:25px;
+}
+
+.iccontainer {
+	width:700px;
+	height:100px;
+	margin-top:10px;
+	margin-left:130px;
+}
+
+#yazi {
+	padding-top:20px;
+    padding-left:10px;
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+	font-size:30px;
+	font-style:normal;
+	color:#FFF;
+	text-align:center;
+}
+
+/*İLETİŞİM */
+
+#google-map{
+    width:460px;
+	height:370px;
+	float:right;
+	margin-top:20px;	
+}
+	
+.container {
+	width:960px;
+	height:auto;
+	margin:0 auto;
+}
+
+table {
+	width:370px;
+	height:auto;	
+}
+
+table caption {
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#FFF;
+	text-align:left;		
+}
+	
+table th {
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+	font-size:12px;
+	color:#FFF;
+	text-align:left;
+}
+
+input[type=text]{
+	width:285px;
+	height:20px;
+	background-color:#f9f9f9;
+	border:2px #c2c2c2 solid;	
+}
+
+table textarea{
+	width:285px;
+	height:160px;
+	background-color:#f9f9f9;
+	border:2px #c2c2c2 solid;
+	resize:none;
+}
+
+input[type=submit]{
+	width:150px;
+	height:25px;
+	background-color:#F00;
+	margin-left:60px;
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+	font-size:14px;
+	color:#fff;
+}
+
+#iletisim {
+	float:left;
+	width:450px;
+	height:auto;
+	margin-top:20px;
+	margin-left:50px;
+}
